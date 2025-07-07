@@ -26,12 +26,7 @@ public class Card {
     }
 
     public void edit(String question, String answer) {
-        this.question = question;
-        this.answer = answer;
-    }
-
-    // Novo comportamento útil
-    public boolean isCorrectAnswer(String userAnswer) {
-        return answer.equalsIgnoreCase(userAnswer.trim());
+        setQuestion(question);
+        setAnswer(answer);
     }
 }
